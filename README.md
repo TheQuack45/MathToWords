@@ -1,16 +1,21 @@
-#MathToWords
+# MathToWords
 
 This is a simple program that takes in an expression in algebraic (infix) notation and outputs it in words.
 
 My word notation is essentially Polish notation/prefix notation in words. It will never be ambiguous, but it isn't all that easy for humans to keep track of. This program and format is mostly intended as a little toy project, but the format could theoretically be used for a more natural, but defined, way to speak mathematical expressions.
 
-##Explanation
+## Explanation
 
 | Operator | Text Format |
 | --- | --- |
 | a + b | the sum of a and b |
+| a - b | the difference of a and b |
+| a * b | the product of a and b |
+| a / b | the quotient of a and b |
+| a ^ b | the result of a to the power of b |
+| a % b | the result of a modulus b |
 
-##Examples
+## Examples
 
 3+2 becomes:
 
