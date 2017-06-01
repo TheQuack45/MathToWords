@@ -4,6 +4,6 @@ This is a simple program that takes in an expression in algebraic (infix) notati
 
 ##Example
 
-> 3 + 2 becomes:
+3 + 2 becomes:
 
-the sum of three plus two
+> the sum of three plus two
