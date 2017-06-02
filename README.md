@@ -6,6 +6,8 @@ My word notation is essentially Polish notation/prefix notation in words. It wil
 
 ## Explanation
 
+My word notation works much like prefix notation, so the operator is "placed" before its operand(s). For example, addition ("+") is written this way: "the sum of {a} and {b}". Prefix notation does get a bit hard to work with when you have a complicated expression, but the important thing to remember is that each operator has a fixed number of operands. So addition, for example, will always have two operands and thus will always be in the format described above. See the table below for the list of currently supported operations, and see below that for examples of the format in action.
+
 | Operator | Text Format |
 | --- | --- |
 | a + b | the sum of a and b |
