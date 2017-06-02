@@ -120,6 +120,7 @@ namespace MathToWords
             }
             Array.Reverse(groups);
             
+            // TODO: Refactor this to be cleaner and less duplicated
             for (int i = 0; i < groups.Length; i++)
             {
                 string group = groups[i];

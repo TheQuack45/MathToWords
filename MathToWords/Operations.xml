@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<operations>
+		<operation>
+			<operChar>+</operChar>
+			<operPrec>1</operPrec>
+			<operAssoc>Left</operAssoc>
+			<operText>the sum of {0} and {1}</operText>
+		</operation>
+		<operation>
+			<operChar>-</operChar>
+			<operPrec>1</operPrec>
+			<operAssoc>Left</operAssoc>
+			<operText>the difference of {0} and {1}</operText>
+		</operation>
+		<operation>
+			<operChar>*</operChar>
+			<operPrec>2</operPrec>
+			<operAssoc>Left</operAssoc>
+			<operText>the product of {0} and {1}</operText>
+		</operation>
+		<operation>
+			<operChar>/</operChar>
+			<operPrec>2</operPrec>
+			<operAssoc>Left</operAssoc>
+			<operText>the quotient of {0} and {1}</operText>
+		</operation>
+		<operation>
+			<operChar>^</operChar>
+			<operPrec>3</operPrec>
+			<operAssoc>Right</operAssoc>
+			<operText>the result of {0} to the power of {1}</operText>
+		</operation>
+		<operation>
+			<operChar>%</operChar>
+			<operPrec>2</operPrec>
+			<operAssoc>Left</operAssoc>
+			<operText>the result of {0} modulus {1}</operText>
+		</operation>
+	</operations>
+</root>

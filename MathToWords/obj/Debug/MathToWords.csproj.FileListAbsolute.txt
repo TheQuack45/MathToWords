@@ -4,3 +4,4 @@ C:\Users\DQuack\documents\visual studio 2017\Projects\MathToWords\MathToWords\bi
 C:\Users\DQuack\documents\visual studio 2017\Projects\MathToWords\MathToWords\obj\Debug\MathToWords.csprojResolveAssemblyReference.cache
 C:\Users\DQuack\documents\visual studio 2017\Projects\MathToWords\MathToWords\obj\Debug\MathToWords.exe
 C:\Users\DQuack\documents\visual studio 2017\Projects\MathToWords\MathToWords\obj\Debug\MathToWords.pdb
+C:\Users\DQuack\documents\visual studio 2017\Projects\MathToWords\MathToWords\bin\Debug\Operations.xml
