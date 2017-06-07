@@ -59,30 +59,30 @@ namespace MathToWords
         }
 
         /// <summary>
-        /// Gets a list of the associations for all supported operations.
+        /// Gets a list of the associativities for all supported operations.
         /// </summary>
-        /// <returns>List of associations for all supported operations.</returns>
-        public static Dictionary<string, Operation.ASSOCIATIVITY> GetAssociations()
+        /// <returns>List of associativities for all supported operations.</returns>
+        public static Dictionary<string, Operation.ASSOCIATIVITY> GetAssociativities()
         {
             List<Operation> operations = GetOperationsCommon(Environment.CurrentDirectory + @"\Operations.xml");
             Dictionary<string, Operation.ASSOCIATIVITY> output = new Dictionary<string, Operation.ASSOCIATIVITY>();
 
             foreach (Operation operation in operations)
             {
-                output.Add(operation.OperationChar, operation.OperationAssociation);
+                output.Add(operation.OperationChar, operation.OperationAssociativity);
             }
 
             return output;
         }
 
         /// <summary>
-        /// Gets the association for the given operation, as specified by the operation's character.
+        /// Gets the associativity for the given operation, as specified by the operation's character.
         /// </summary>
         /// <param name="token">Character of the operation to get the precedence for.</param>
-        /// <returns>The association of the given operation.</returns>
-        public static Operation.ASSOCIATIVITY GetAssociationFor(string token)
+        /// <returns>The associativity of the given operation.</returns>
+        public static Operation.ASSOCIATIVITY GetAssociativityFor(string token)
         {
-            return GetAssociations()[token];
+            return GetAssociativities()[token];
         }
 
         /// <summary>

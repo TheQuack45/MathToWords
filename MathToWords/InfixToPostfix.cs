@@ -34,11 +34,11 @@ namespace MathToWords
                     {
                         while (Utility.IsOperator(operStack.Peek()))
                         {
-                            if (ConfigReader.GetAssociationFor(token) == Operation.ASSOCIATIVITY.Left && ConfigReader.GetPrecedenceFor(token) <= ConfigReader.GetPrecedenceFor(operStack.Peek()))
+                            if (ConfigReader.GetAssociativityFor(token) == Operation.ASSOCIATIVITY.Left && ConfigReader.GetPrecedenceFor(token) <= ConfigReader.GetPrecedenceFor(operStack.Peek()))
                             {
                                 output.Enqueue(operStack.Pop());
                             }
-                            else if (ConfigReader.GetAssociationFor(token) == Operation.ASSOCIATIVITY.Right && ConfigReader.GetPrecedenceFor(token) < ConfigReader.GetPrecedenceFor(operStack.Peek()))
+                            else if (ConfigReader.GetAssociativityFor(token) == Operation.ASSOCIATIVITY.Right && ConfigReader.GetPrecedenceFor(token) < ConfigReader.GetPrecedenceFor(operStack.Peek()))
                             {
                                 output.Enqueue(operStack.Pop());
                             }

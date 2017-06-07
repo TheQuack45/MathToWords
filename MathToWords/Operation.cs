@@ -36,11 +36,11 @@ namespace MathToWords
             set { _operationPrecedence = value; }
         }
 
-        private ASSOCIATIVITY _operationAssociation;
-        public ASSOCIATIVITY OperationAssociation
+        private ASSOCIATIVITY _operationAssociativity;
+        public ASSOCIATIVITY OperationAssociativity
         {
-            get { return _operationAssociation; }
-            set { _operationAssociation = value; }
+            get { return _operationAssociativity; }
+            set { _operationAssociativity = value; }
         }
 
         private string _operationText;
@@ -63,7 +63,7 @@ namespace MathToWords
         {
             this.OperationChar = operChar;
             this.OperationPrecedence = operPrec;
-            this.OperationAssociation = operAssoc;
+            this.OperationAssociativity = operAssoc;
             this.OperationText = operText;
             this.OperandCount = operandCount;
         }
@@ -72,7 +72,7 @@ namespace MathToWords
         {
             this.OperationChar = operChar;
             this.OperationPrecedence = operPrec;
-            this.OperationAssociation = OperatorAssoc[operAssoc];
+            this.OperationAssociativity = OperatorAssoc[operAssoc];
             this.OperationText = operText;
             this.OperandCount = operandCount;
         }
