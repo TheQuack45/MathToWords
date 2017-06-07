@@ -9,26 +9,6 @@ namespace MathToWords
 {
     public static class InfixToPostfix
     {
-        public enum ASSOCIATIVITY { Left, Right };
-        public static readonly Dictionary<string, ASSOCIATIVITY> OperatorAssoc = new Dictionary<string, ASSOCIATIVITY>()
-        {
-            { "+", ASSOCIATIVITY.Left },
-            { "-", ASSOCIATIVITY.Left },
-            { "*", ASSOCIATIVITY.Left },
-            { "/", ASSOCIATIVITY.Left },
-            { "^", ASSOCIATIVITY.Right },
-            { "%", ASSOCIATIVITY.Left },
-        };
-        public static readonly Dictionary<string, int> OperatorPrecedence = new Dictionary<string, int>()
-        {
-            { "+", 1 },
-            { "-", 1 },
-            { "*", 2 },
-            { "/", 2 },
-            { "^", 3 },
-            { "%", 2 },
-        };
-
         /// <summary>
         /// Implements the shunting yard algorithm to convert the given expression from infix notation to prefix notation.
         /// </summary>
@@ -54,11 +34,11 @@ namespace MathToWords
                     {
                         while (Utility.IsOperator(operStack.Peek()))
                         {
-                            if (OperatorAssoc[token] == ASSOCIATIVITY.Left && OperatorPrecedence[token] <= OperatorPrecedence[operStack.Peek()])
+                            if (ConfigReader.GetAssociationFor(token) == Operation.ASSOCIATIVITY.Left && ConfigReader.GetPrecedenceFor(token) <= ConfigReader.GetPrecedenceFor(operStack.Peek()))
                             {
                                 output.Enqueue(operStack.Pop());
                             }
-                            else if (OperatorAssoc[token] == ASSOCIATIVITY.Right && OperatorPrecedence[token] < OperatorPrecedence[operStack.Peek()])
+                            else if (ConfigReader.GetAssociationFor(token) == Operation.ASSOCIATIVITY.Right && ConfigReader.GetPrecedenceFor(token) < ConfigReader.GetPrecedenceFor(operStack.Peek()))
                             {
                                 output.Enqueue(operStack.Pop());
                             }
