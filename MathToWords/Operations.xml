@@ -43,5 +43,12 @@
 			<operText>the result of {0} modulus {1}</operText>
       <operands>2</operands>
 		</operation>
+    <operation>
+      <operChar>!</operChar>
+      <operPrec>3</operPrec>
+      <operAssoc>Left</operAssoc>
+      <operText>the factorial of {0}</operText>
+      <operands>1</operands>
+    </operation>
 	</operations>
 </root>
