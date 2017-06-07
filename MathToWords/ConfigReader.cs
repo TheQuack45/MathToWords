@@ -8,9 +8,16 @@ using System.Xml;
 
 namespace MathToWords
 {
+    /// <summary>
+    /// Static class that provides methods for accessing values from the operations config file.
+    /// </summary>
     public static class ConfigReader
     {
         #region Methods definition
+        /// <summary>
+        /// Gets a list of the characters for all supported operations.
+        /// </summary>
+        /// <returns>List of characters for all supported operations.</returns>
         public static List<string> GetCharacters()
         {
             List<Operation> operations = GetOperationsCommon(Environment.CurrentDirectory + @"\Operations.xml");
@@ -24,6 +31,10 @@ namespace MathToWords
             return output;
         }
 
+        /// <summary>
+        /// Gets a list of the precedences for all supported operations.
+        /// </summary>
+        /// <returns>List of precedences for all supported operations.</returns>
         public static Dictionary<string, int> GetPrecedences()
         {
             List<Operation> operations = GetOperationsCommon(Environment.CurrentDirectory + @"\Operations.xml");
@@ -37,11 +48,20 @@ namespace MathToWords
             return output;
         }
 
+        /// <summary>
+        /// Gets the precedence for the given operation, as specified by the operation's character.
+        /// </summary>
+        /// <param name="token">Character of the operation to get the precedence for.</param>
+        /// <returns>The precedence for the given operation.</returns>
         public static int GetPrecedenceFor(string token)
         {
             return GetPrecedences()[token];
         }
 
+        /// <summary>
+        /// Gets a list of the associations for all supported operations.
+        /// </summary>
+        /// <returns>List of associations for all supported operations.</returns>
         public static Dictionary<string, Operation.ASSOCIATIVITY> GetAssociations()
         {
             List<Operation> operations = GetOperationsCommon(Environment.CurrentDirectory + @"\Operations.xml");
@@ -55,11 +75,20 @@ namespace MathToWords
             return output;
         }
 
+        /// <summary>
+        /// Gets the association for the given operation, as specified by the operation's character.
+        /// </summary>
+        /// <param name="token">Character of the operation to get the precedence for.</param>
+        /// <returns>The association of the given operation.</returns>
         public static Operation.ASSOCIATIVITY GetAssociationFor(string token)
         {
             return GetAssociations()[token];
         }
 
+        /// <summary>
+        /// Gets a list of the word formats for all supported operations.
+        /// </summary>
+        /// <returns>List of word formats for all supported operations.</returns>
         public static Dictionary<string, string> GetWords()
         {
             List<Operation> operations = GetOperationsCommon(Environment.CurrentDirectory + @"\Operations.xml");
@@ -73,11 +102,20 @@ namespace MathToWords
             return output;
         }
 
+        /// <summary>
+        /// Gets the word format for the given operation, as specified by the operation's character.
+        /// </summary>
+        /// <param name="token">Character of the operation to get the word format for.</param>
+        /// <returns>The word format of the given operation.</returns>
         public static string GetWordsFor(string token)
         {
             return GetWords()[token];
         }
 
+        /// <summary>
+        /// Gets a list of operand counts for all supported operations.
+        /// </summary>
+        /// <returns>List of operand counts for all supported operations.</returns>
         public static Dictionary<string, int> GetOperandCounts()
         {
             List<Operation> operations = GetOperationsCommon(Environment.CurrentDirectory + @"\Operations.xml");
@@ -91,11 +129,21 @@ namespace MathToWords
             return output;
         }
 
+        /// <summary>
+        /// Gets the operand count for the given operation, as specified by the operation's character.
+        /// </summary>
+        /// <param name="token">Character of the operation to get the operand count for.</param>
+        /// <returns>The operand count of the given operation.</returns>
         public static int GetOperandCountFor(string token)
         {
             return GetOperandCounts()[token];
         }
 
+        /// <summary>
+        /// Parses the XML file at the given path into a list of Operation objects.
+        /// </summary>
+        /// <param name="path">Path of the XML file to parse from.</param>
+        /// <returns>A list of instances of the Operation class as specified by the given XML file.</returns>
         private static List<Operation> GetOperationsCommon(string path)
         {
             FileStream stream = new FileStream(path, FileMode.Open, FileAccess.Read);
@@ -159,6 +207,9 @@ namespace MathToWords
         #endregion Methods definition
     }
 
+    /// <summary>
+    /// Represents a supported mathematical operation and its attributes.
+    /// </summary>
     public class Operation
     {
         #region Static members definition
