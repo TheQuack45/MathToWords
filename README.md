@@ -1,6 +1,6 @@
 # MathToWords
 
-This is a simple program that takes in an expression in algebraic (infix) notation and outputs it in words.
+This is a simple program that takes in an expression in algebraic (infix) notation and outputs it in a well-defined, English word format.
 
 My word notation is essentially Polish notation/prefix notation in words. It will never be ambiguous, but it isn't all that easy for humans to keep track of. This program and format is mostly intended as a little toy project, but the format could theoretically be used for a more natural, but defined, way to speak mathematical expressions.
 
