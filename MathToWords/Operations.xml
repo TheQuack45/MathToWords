@@ -50,5 +50,89 @@
       <operText>the factorial of {0}</operText>
       <operands>1</operands>
     </operation>
+    <operation>
+      <operChar>sin</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the sine of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>cos</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the cosine of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>tan</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the tangent of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>arcsin</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the inverse sine of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>arccos</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the inverse cosine of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>arctan</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the inverse tangent of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>csc</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the cosecant of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>sec</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the secant of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>cot</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the cotangent of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>arccsc</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the inverse cosecant of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>arcsec</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the inverse secant of {0}</operText>
+      <operands>1</operands>
+    </operation>
+    <operation>
+      <operChar>arccot</operChar>
+      <operPrec>2</operPrec>
+      <operAssoc>Right</operAssoc>
+      <operText>the inverse cotangentin of {0}</operText>
+      <operands>1</operands>
+    </operation>
 	</operations>
 </root>
