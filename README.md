@@ -17,6 +17,18 @@ My word notation works much like prefix notation, so the operator is "placed" be
 | a ^ b | the result of a to the power of b |
 | a % b | the result of a modulus b |
 | a ! | the factorial of a |
+| sin a | the sine of a |
+| cos a | the cosine of a |
+| tan a | the tangent of a |
+| csc a | the cosecant of a |
+| sec a | the secant of a |
+| cot a | the cotangent of a |
+| arcsin a | the inverse sine of a |
+| arccos a | the inverse cosine of a |
+| arctan a | the inverse tangent of a |
+| arccsc a | the inverse cosecant of a |
+| arcsec a | the inverse secant of a |
+| arccot a | the inverse cotangent of a |
 
 ## Examples
 
