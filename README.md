@@ -16,6 +16,7 @@ My word notation works much like prefix notation, so the operator is "placed" be
 | a / b | the quotient of a and b |
 | a ^ b | the result of a to the power of b |
 | a % b | the result of a modulus b |
+| a ! | the factorial of a |
 
 ## Examples
 
