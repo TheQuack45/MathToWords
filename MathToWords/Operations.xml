@@ -131,7 +131,7 @@
       <operChar>arccot</operChar>
       <operPrec>2</operPrec>
       <operAssoc>Right</operAssoc>
-      <operText>the inverse cotangentin of {0}</operText>
+      <operText>the inverse cotangent of {0}</operText>
       <operands>1</operands>
     </operation>
 	</operations>
